@@ -1,0 +1,369 @@
+:root {
+    --red: hsl(0, 56%, 69%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+.noneOutline{
+    border: none !important;
+    outline: none !important;
+}
+// body {
+//     border: solid 2px red;
+//     height: 100vh;
+//     width: 100%;
+//     font-size: 16px;
+//     font-family: 'Poppins', sans-serif;
+// }
+
+// .top-img-bg{
+//     background-image: url(http://aims.net.pk/wp-content/uploads/2021/01/admission-bg-01-01.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     height: 500px;
+//     margin-bottom: 20px;
+// }
+
+.sp-hd-1{
+    padding-top: 300px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: var(--varyDarkBlue);
+    font-size:32px;
+    font-weight: var(--weight3);
+}
+
+.heading-margin{
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+
+/* Section 01 Why Aims */
+.box p {
+    color: var(--varyDarkBlue);
+}
+
+.box {
+    min-width: 100%;
+    min-height: 25em;
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;
+}
+
+img {
+    margin-bottom: 10px;
+    width: auto;
+    max-height: 64px;
+}
+
+.red {
+    border-top: 5px solid var(--red);
+}
+
+.cyan {
+    border-top: 5px solid var(--cyan);
+}
+
+.orange {
+    border-top: 5px solid var(--orange);
+}
+
+.blue{
+    border-top: 5px solid var(--blue);
+}
+
+h3 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.procedures-list .col-md-3 .box {
+    position: relative;
+    background: #2a2b2f;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.procedures-list .col-md-3 .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+}
+
+.procedures-list .col-md-3 .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.procedures-list .box .content {
+    padding: 10px;
+}
+
+.procedures-list .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.procedures-list .box .content h3 {
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.procedures-list .box .content p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+/* Section 03: Important Dates */
+.important-dates-container {
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+th {
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #55608f;
+}
+
+tbody tr:hover {
+    background-color: rgba(85, 96, 143,0.3)
+}
+
+tbody tr td{
+    position: relative;
+}
+
+.table-sub-heading{
+    color: var(--red);
+    text-decoration:underline;
+    font-weight: var(--weight3);
+}
+
+/* Section 04: FAQs */
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.accordion-wrapper {
+    overflow: hidden;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding:0px;
+}
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #55608f;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+.accordion-label:hover {
+    background: rgba(4,57,94,1);
+}
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    color: rgba(4,57,94,1);
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content:hover{
+    background-color: rgba(85, 96, 143,0.3)
+}
+
+.accordion-content p{
+    margin: 0;
+    color: var(--varyDarkBlue);
+    font-size: 18px;
+}
+input:checked + .accordion-label {
+    background: rgba(4,57,94,1);
+}
+input:checked + .accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+
+.icons-credits{
+    background-color:#151a1f;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
+
+.icons-credits a{
+    color: white;
+}
+
+.icons-credits a:hover{
+    color: white;
+}
+
+/* Section 05: Downloads */
+.downloads{
+    position: relative;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-modern{
+    position: relative;
+    display: flex;
+    height: 55px;
+    margin: 15px;
+    perspective: 1000px;
+}
+.btn-modern a{
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-modern #a1:before{
+    content: "Departments and facilities at AES";
+}
+
+.btn-modern #a1:after{
+    content: "Departments and facilities at AES";
+}
+
+.btn-modern #a2:before{
+    content: "Admission Form";
+}
+
+.btn-modern #a2:after{
+    content: "Admission Form";
+}
+
+.btn-modern #a3:before{
+    content: "Preschool handbook for parents";
+}
+
+.btn-modern #a3:after{
+    content: "Preschool handbook for parents";
+}
+
+.btn-modern #a4:before{
+    content: "Annual fund and general fund uses";
+}
+
+.btn-modern #a4:after{
+    content: "Annual fund and general fund uses";
+}
+
+.btn-modern #a5:before{
+    content: "Requirements with admission form";
+}
+
+.btn-modern #a5:after{
+    content: "Requirements with admission form";
+}
+
+
+.btn-modern #a6:before{
+    content: "Transport form for students";
+}
+
+.btn-modern #a6:after{
+    content: "Transport form for students";
+}
+
+.btn-modern a:before,
+.btn-modern a:after{
+    position: absolute;
+    width: 400px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #55608f;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.btn-modern a:before{
+    color: #fff;
+    background: #55608f;
+    transform: rotateY(0deg) translateZ(25px);
+}
+.btn-modern a:after{
+    content: "View PDF";
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+.btn-modern a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}

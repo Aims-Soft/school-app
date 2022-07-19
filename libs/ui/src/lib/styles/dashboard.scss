@@ -1,0 +1,72 @@
+:root{
+  // --dark : #484e4a;
+  --dark: #2a2829;
+  --dark-light: #c5c1bb;
+  --light: #eff0eb;
+  --orange: #f5b121;
+  --nha-orange: #1d6340;
+  --darktone1: #9fa8a3;
+  --sun-red: #d8705c;
+  --white: #ffffff;
+  --nha-blue: #3c1874;
+  --nha-light-blue: #dff2fa;
+  // --nha-light-blue: green;
+}
+
+/** --------------------------------
+-- statis
+-------------------------------- */
+.statis {
+	color: var(--dk-gray-100);
+}
+
+.statis .box {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.statis .box h3:after {
+	content: "";
+	height: 2px;
+	width: 70%;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.12);
+	display: block;
+	margin-top: 10px;
+}
+
+.statis .box i {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	font-size: 50px;
+	padding: 15px;
+	top: -25px;
+	left: -25px;
+	background-color: rgba(255, 255, 255, 0.15);
+	line-height: 60px;
+	text-align: right;
+	border-radius: 50%;
+}
+
+/** --------------------------------
+-- Statistics
+-------------------------------- */
+.statistics {
+	color: var(--dk-gray-200);
+}
+
+.statistics .box {
+	background-color: var(--white);
+}
+
+.statistics .box i {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.statistics .box p {
+	color: var(--dk-gray-400);
+}

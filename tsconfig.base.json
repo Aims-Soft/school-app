@@ -1,0 +1,47 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@general-app/auth": ["libs/auth/src/index.ts"],
+      "@general-app/layouts": ["libs/layouts/src/index.ts"],
+      "@general-app/material": ["libs/material/src/index.ts"],
+      "@general-app/shared/helpers/field-validations": [
+        "libs/shared/helpers/field-validations/src/index.ts"
+      ],
+      "@general-app/shared/helpers/guards": [
+        "libs/shared/helpers/guards/src/index.ts"
+      ],
+      "@general-app/shared/helpers/interceptors": [
+        "libs/shared/helpers/interceptors/src/index.ts"
+      ],
+      "@general-app/shared/helpers/jwt-interceptor": [
+        "libs/shared/helpers/jwt-interceptor/src/index.ts"
+      ],
+      "@general-app/shared/interface": ["libs/shared/interface/src/index.ts"],
+      "@general-app/shared/services/auth": [
+        "libs/shared/services/auth/src/index.ts"
+      ],
+      "@general-app/shared/services/data": [
+        "libs/shared/services/data/src/index.ts"
+      ],
+      "@general-app/shared/services/global-data": [
+        "libs/shared/services/global-data/src/index.ts"
+      ],
+      "@general-app/ui": ["libs/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

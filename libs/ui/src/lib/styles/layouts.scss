@@ -1,0 +1,79 @@
+/**************************************/
+/************ Layouts *****************/
+:root{
+  // --dark : #484e4a;
+  --dark: #2a2829;
+  --dark-light: #c5c1bb;
+  --light: #eff0eb;
+  --lighttone1: #d9e2e6;
+  // --nha-orange: #f5b121;
+  --nha-orange: #1d6340;
+  --cane: #00a099;
+  --darktone1: #9fa8a3;
+  --sun-red: #d8705c;
+  --white: #ffffff;
+  --nha-blue: #3c1874;
+  --nha-light-blue: #d9e2e6;
+}
+.layout-sideNav-container {
+  height: 100vh;
+  background-color: darkgray;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.layout-sidenav-content {
+  background-color: #f8f9fa !important;
+  // background-image: linear-gradient(to right top, #f8f9fa, #f4f6f9, #f1f2f8, #f0eef6, #f1e9f3, #f0e9f3, #f0e8f3, #efe8f3, #edebf6, #ebeff7, #ebf1f8, #edf4f8);
+  height: 99.5vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.layout-sidenav-nav {
+  padding: 0px;
+  width: 15em;
+}
+.header{
+  background-color: var(--darktone1);
+
+  // height: 50px;
+}
+
+.main-content{
+  height: 100px;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  // background-color: var(--light);
+  background-image: linear-gradient(to right top, #f8f9fa, #f4f6f9, #f1f2f8, #f0eef6, #f1e9f3, #f0e9f3, #f0e8f3, #efe8f3, #edebf6, #ebeff7, #ebf1f8, #edf4f8);
+}
+.footer{
+  background-color: var(--dark);
+  color: var(--dark-light);
+  height: 30px;
+  // border-top: 1px solid var(--white);
+  font-family: 'OpenSans';
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 5px;
+  border : 0 !important;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar{
+  background: var(--white) !important;
+  height: 50px;
+}
+.mat-toolbar .title{
+  font-family: 'Montserrat' !important;
+  color: var(--nha-blue) !important;
+}
+.usernameTxt{
+  font-family: Lato;
+  font-size: 0.7em !important;
+}
+// .mat-menu-panel{
+//   background-color: var(--li);
+// }

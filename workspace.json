@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "projects": {
+    "aims-school": "apps/aims-school",
+    "auth": "libs/auth",
+    "general-portal-e2e": "apps/general-portal-e2e",
+    "layouts": "libs/layouts",
+    "material": "libs/material",
+    "shared-helpers-field-validations": "libs/shared/helpers/field-validations",
+    "shared-helpers-guards": "libs/shared/helpers/guards",
+    "shared-helpers-interceptors": "libs/shared/helpers/interceptors",
+    "shared-helpers-jwt-interceptor": "libs/shared/helpers/jwt-interceptor",
+    "shared-interface": "libs/shared/interface",
+    "shared-services-auth": "libs/shared/services/auth",
+    "shared-services-data": "libs/shared/services/data",
+    "shared-services-global-data": "libs/shared/services/global-data",
+    "ui": "libs/ui"
+  }
+}

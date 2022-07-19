@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/interface",
+  "sourceRoot": "libs/shared/interface/src",
+  "prefix": "general-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/interface"],
+      "options": {
+        "jestConfig": "libs/shared/interface/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/interface/src/**/*.ts",
+          "libs/shared/interface/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

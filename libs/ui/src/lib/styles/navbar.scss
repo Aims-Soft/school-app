@@ -1,0 +1,154 @@
+.side-nav-default{
+  background-color: var(--nha-orange);
+  color: #484e4a;
+  overflow-y: hidden;
+}
+.nav-header{
+  height: 5em;
+  // background-color: var(--dark);
+}
+
+.header img{
+  // content: url(../assets/images/ssechs.png) !important;
+}
+.nha-logo{
+  background-position: center;
+  // height: 3em;
+  // width: 3em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 6em;
+  filter: drop-shadow(2px 2px 2px var(--dark));
+  text-align: end;
+  // background-image: url(../assets/images/ssechs.png);
+  border-radius: 50%;
+}
+
+.nav-menu-heading{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  font-weight: 500;
+  // background-color: var(--darktone1) !important;
+  color: var(--dark-light) !important;
+  letter-spacing: 0.1em;
+  // text-shadow: 2px 2px var(--dark-light);
+  // color: #121212;
+
+text-shadow: 2px 7px 5px rgba(0,0,0,0.3),
+    0px -4px 10px rgba(255,255,255,0.3);
+  // border-bottom: 1px dotted #000;
+  // padding-bottom: 5em !important;
+  // padding-left: 1em;
+}
+
+.nav-link[data-bs-toggle].collapsed:before {
+  content: "▾  ";
+}
+
+.nav-link[data-bs-toggle]:not(.collapsed):before {
+  content: "▴  ";
+}
+.side-nav-default a {
+  // padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 0.90em;
+  color: var(--dark-light);
+  display: block;
+  transition: 0.3s;
+  font-family: 'Raleway';
+  border-bottom: 1px dotted black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav-default a:hover {
+  color: var(--white);
+  transition: 0.3s;
+  font-size: 0.93em;
+}
+
+.side-nav-default a:active{
+  color: var(--white);
+}
+// .side-nav-default .nav-item-container{
+//   overflow-y: auto;
+//   position: absolute;
+// }
+
+
+/************************************* toolbar ******************************/
+.pageToolbar {
+  max-width: 60em;
+  /* The mask-image gives us some extra fading. It is not necessary but without this, you can't face out the box-shadows. This clips our menu */
+  mask-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 25%,
+    #ffffff 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  margin: 0 auto;
+  /* Using padding instead of margin for the top and bottom here will keep our box-shadow visible and not affected by the mask-image */
+  padding: 10px 0;
+}
+
+.pageToolbar ul {
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.pageToolbar ul li {
+  display: inline-block;
+}
+
+.pageToolbar ul li a {
+  padding: 10px;
+  font-family: "Lato";
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 1.2em;
+  text-decoration: none;
+  display: block;
+}
+
+.pageToolbar ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.saveUpdateBar{
+  position: fixed;
+  right: 0;
+  height: 50px;
+  background-image: linear-gradient(to right top, #051937, #061c48, #121e59, #261d68, #3c1874);
+  // background-color: var(--nha-blue) !important;
+  padding: 5px;
+  padding-right: 30px !important;
+  z-index: 99 !important;
+}
+
+.saveUpdateBar .save{
+  color: var(--light) !important;
+}
+
+/******************************start perfect scrollbar css*********************************/
+
+perfect-scrollbar>.ps.ps--active-y>.ps__rail-y{
+  background-color: transparent !important;
+}
+
+perfect-scrollbar>.ps.ps--scrolling-x>.ps__rail-x, perfect-scrolling>.ps.ps--scrolling-y>.px__rail-y{
+  background-color: transparent !important;
+}
+
+/******************************end perfect scrollbar css*********************************/

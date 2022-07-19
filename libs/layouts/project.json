@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/layouts",
+  "sourceRoot": "libs/layouts/src",
+  "prefix": "general-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/layouts"],
+      "options": {
+        "jestConfig": "libs/layouts/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/layouts/src/**/*.ts",
+          "libs/layouts/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

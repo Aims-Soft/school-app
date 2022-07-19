@@ -1,0 +1,57 @@
+<div class="header">
+    <mat-toolbar mat-elevation-z10>
+      <button
+        mat-icon-button
+        class="example-icon"
+        (click)="onToggleDrawer()"
+        aria-label="icon-button with menu icon"
+      >
+        <mat-icon>{{ menu_btn }}</mat-icon>
+      </button>
+      <img
+        [src]="logoUrl"
+        alt=""
+        width="55px"
+        height="auto"
+      />
+      <span class="title" mat-elevation-z2> {{ title }}</span>
+      <span class="example-spacer"></span>
+  
+      <!-- user menu -->
+      <span class="usernameTxt">
+        {{ userName }}
+      </span>
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        [matMenuTriggerFor]="userMenu"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>person</mat-icon>
+      </button>
+      <mat-menu #userMenu="matMenu">
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Log out</span>
+        </button> </mat-menu
+      ><!-- end user menu -->
+  
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+        [matMenuTriggerFor]="menu"
+      >
+        <mat-icon>apps</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <div *ngFor="let item of applicationModulesList">
+          <button mat-menu-item (click)="setSidebarMenu(item)">
+            <mat-icon>{{item.moduleIcon}}</mat-icon>
+            <span>{{ item.applicationModuleTitle }}</span>
+          </button>
+        </div>
+      </mat-menu>
+    </mat-toolbar>
+  </div>
+  

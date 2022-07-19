@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/helpers/jwt-interceptor",
+  "sourceRoot": "libs/shared/helpers/jwt-interceptor/src",
+  "prefix": "general-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/helpers/jwt-interceptor"],
+      "options": {
+        "jestConfig": "libs/shared/helpers/jwt-interceptor/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/helpers/jwt-interceptor/src/**/*.ts",
+          "libs/shared/helpers/jwt-interceptor/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

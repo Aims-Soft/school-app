@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/services/data",
+  "sourceRoot": "libs/shared/services/data/src",
+  "prefix": "general-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/services/data"],
+      "options": {
+        "jestConfig": "libs/shared/services/data/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/services/data/src/**/*.ts",
+          "libs/shared/services/data/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

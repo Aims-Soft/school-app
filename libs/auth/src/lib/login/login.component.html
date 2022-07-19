@@ -1,0 +1,48 @@
+<div class="login-page">
+    <div
+      class="d-flex flex-column justify-content-between card animate__animated animate__swing mat-elevation-z10"
+    >
+      <div>
+        <div class="pt-2 text-center">
+          <!-- <img id="logoImg" [src]="logoImg" /> -->
+        </div>
+        <h2 class="pt-2 text-center">SIGN-IN</h2>
+        <small class="text-center text-secondary"
+          >Welcome to Point of Sale</small
+        >
+      </div>
+      <div class="text-center">
+        <form #loginForm="ngForm">
+          <mat-form-field class="w-100 ps-5 pe-5">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="email" name="email" />
+          </mat-form-field>
+          <mat-form-field class="w-100 ps-5 pe-5">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              [(ngModel)]="password"
+              name="password"
+              [type]="hide ? 'password' : 'text'"
+            />
+  
+            <mat-icon class="cursorPointer" matSuffix (click)="hide = !hide">{{
+              hide ? 'visibility_off' : 'visibility'
+            }}</mat-icon>
+          </mat-form-field>
+          <button mat-raised-button class="savebtn" (click)="login()">
+            Sign In
+          </button>
+        </form>
+      </div>
+      <div
+        class="d-flex flex-column align-self-stretch light-blue-bg text-center pt-2"
+      >
+        <small
+          ><span class="sunred-text">Don't have an account?</span>
+          <em class="text-secondary"> contact portal administrator</em></small
+        >
+      </div>
+    </div>
+  </div>
+  

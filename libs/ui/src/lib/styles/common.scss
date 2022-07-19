@@ -1,0 +1,518 @@
+:root{
+  // --dark : #484e4a;
+  --dark: #2a2829;
+  --dark-light: #c5c1bb;
+  --light: #eff0eb;
+  --orange: #f5b121;
+  --nha-orange: #1d6340;
+  --darktone1: #9fa8a3;
+  --sun-red: #d8705c;
+  --white: #ffffff;
+  --nha-blue: #3c1874;
+  // --nha-light-blue: #87CEFA;
+  // --nha-light-blue: #DFF2FA;
+  --nha-light-blue: black;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+  // background-color: var(--light);
+  background-image: linear-gradient(to right top, #f8f9fa, #f4f6f9, #f1f2f8, #f0eef6, #f1e9f3, #f0e9f3, #f0e8f3, #efe8f3, #edebf6, #ebeff7, #ebf1f8, #edf4f8);
+  overflow: hidden;
+}
+
+h2{
+  font-family: 'Oswald';
+  font-size: 1.8em !important;
+  // color: var(--nha-blue);
+  letter-spacing: 0.05em !important;
+}
+
+h3{
+  font-family: 'Lato';
+  font-size: 1.5em !important;
+  color: var(--nha-blue);
+}
+
+h4{
+  font-family: 'Lato';
+  font-size: 1.2em !important;
+  letter-spacing: 0.10em !important;
+  // font-weight: 600 !important;
+}
+
+h5{
+  font-family: 'Raleway';
+  font-size: 0.50em;
+  color: var(--sun-red);
+}
+
+.h3-panel{
+  font-family: 'Lato' !important;
+  font-size: 1.1em !important;
+  letter-spacing: 0.1em !important;
+  // font-weight: 600;
+}
+
+.fullWidth{
+  width: 100% !important;
+}
+button {
+  outline: none !important;
+}
+
+.noneOutline{
+  outline: none !important;
+}
+
+/********************** headings ************************/
+.h1-page-header{
+  padding-left: 0.5em;
+  color: var(--dark);
+  font-family: 'Raleway';
+  font-size: 1.7em;
+}
+
+/****************** Home Page *************************/
+.homePage img{
+  // content: url(../assets/images/ssechs.png);
+}
+.homePageHeading{
+  font-family: 'Lato';
+  font-size: 1.5em;
+  color: var(--nha-orange);
+}
+.erpImg{
+  background-image: url(../assets/images/erp.png);
+  width: 100%;
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.erpHeading{
+  font-family: Raleway;
+  font-size: 2.0em;
+  color: var(--sun-red);
+}
+/**************** background colors *******************/
+.bg-dark-light{
+  background-color: var(--dark-light);
+}
+
+.bg-light{
+  background-color: var(--light);
+}
+/******************** borders ************************/
+.border-bottom-page-header{
+  border-bottom: 2px solid var(--white);
+}
+.border-right-dark{
+  border-right: 1px solid var(--dark-light);
+}
+.border-top-light{
+  border-top: var(--dark-light) !important;
+}
+.border-bottom-light{
+  border-bottom: var(--dark-light) !important;
+}
+/****************** buttons ***********************/
+.cursorPointer{
+  cursor: pointer !important;
+}
+// .cursorPointer:hover{
+//   transform: scale(1.2);
+//   transition: transform .5s ease;
+// }
+.button-page-header {
+  position: relative;
+  padding: 0.25em 1.0em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+
+.button-page-header.type2 {
+  color: var(--dark);
+}
+.button-page-header.type2.type2:after, .button-page-header.type2.type2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark);
+  transition: all 0.3s ease;
+  transform: scale(0.85);
+}
+.button-page-header.type2.type2:hover:before {
+  top: 0;
+  transform: scale(1);
+}
+.button-page-header.type2.type2:hover:after {
+  transform: scale(1);
+}
+
+/******* button with half bg color ***************/
+.btn-half {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 30px;
+  font-size: 0.9em;
+  position: relative;
+  font-family: 'Montserrat';
+  letter-spacing: 0.2em;
+}
+.btn-half::before {
+  -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: var(--dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn-half .btn-text {
+  color: var(--white);
+  mix-blend-mode: difference;
+}
+.btn-half:hover::before {
+  background: var(--dark);
+  width: 100%;
+}
+
+.btn {
+  position: relative;
+  border: 0;
+  padding: 0;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+.btn__text {
+  font-size: 14px;
+  // text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+/**
+ * Button 03
+ */
+.btn--3 {
+  background: transparent;
+}
+.btn--3 .btn__text {
+  position: relative;
+  z-index: 1;
+  color: var(--dark);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.btn--3::after {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: var(--sun-red);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn--3:hover::after {
+  top: 0;
+  height: 100%;
+}
+.btn--3:hover .btn__text {
+  color: #fff;
+}
+
+/********************************************************/
+/************** Scroll bar *************/
+/********************************************************/
+.simplebar-scrollbar{
+  background-color: var(--sun-red);
+  width: 0.2em;
+  padding: 0;
+  margin: 0;
+}
+.scroll-verticle{
+  overflow-x: hidden !important;
+  overflow-y: scroll ;
+}
+
+.scroll-horizontal{
+  overflow-x: auto ;
+  overflow-y: hidden !important;
+}
+.no-scroll{
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+/*
+ *  STYLE 3
+ */
+
+.style-3::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(203, 167, 11, 0.3) !important;
+  background-color: var(--dark-light) !important;
+}
+
+.style-3::-webkit-scrollbar {
+  width: 6px !important;
+  background-color: var(--dark-light) !important;
+}
+
+.style-3::-webkit-scrollbar-thumb {
+  background-color: var(--dark) !important;
+}
+
+.style-1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.style-1::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--dark-light));
+  border-radius: 6px;
+}
+
+.style-1::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, var(--dark));
+  border-radius: 6px;
+}
+
+/*************** end Scroll bar ****************/
+
+/*************** Angular Material ***************/
+.mat-tab-group{
+  height: calc(100% - 0px);
+  min-height: calc(100% - 0px);
+  max-height: calc(100% - 0px);
+  width: 100%;
+  min-width: 100%;
+}
+
+.my-form-field .mat-form-field-wrapper{
+  margin-bottom: -1.25em;
+  margin-top: -0.75em;
+}
+
+.mat-card-title{
+  // font-family: 'Raleway';
+  font-size: 1.2em;
+  color: var(--sun-red);
+}
+
+.mat-tab-body-content {
+  overflow-x: hidden!important;
+  overflow-y: auto !important;
+}
+.mat-tab-body{
+  flex-grow: 1 !important;
+}
+.mat-panel-title{
+  letter-spacing: 0.1em !important;
+  font-weight: 800 !important;
+}
+
+button.mat-raised-button.savebtn{
+  background-color: var(--nha-orange) !important;
+  color: #fff !important;
+  padding-left: 3.0em !important;
+  padding-right: 3.0em !important;
+}
+
+button.mat-raised-button.resetbtn{
+  background-color: var(--nha-blue) !important;
+  color: #fff !important;
+  padding-left: 3.0em !important;
+  padding-right: 3.0em !important;
+}
+
+button.mat-raised-button.uploadbtn{
+  background-color: var(--dark) !important;
+  padding-left: 3.0em !important;
+  padding-right: 3.0em !important;
+  color: white !important;
+}
+
+/*************** end Angular Material ************/
+
+/************* Image Avatars ***************/
+.avatar-border{
+  border: 3px solid var(--white);
+}
+.picFrame{
+  border: 10px solid white;
+  width: 300px;
+  height: auto;
+}
+/*********** end Image Avatars *************/
+
+
+/***************** bootstrap classes ***************/
+.row [class*='col-'] {
+  transition: flex 0.5s ease-in-out, max-width .5s ease-in-out;
+}
+
+/************** end bootstrap classes **************/
+
+/*************** div images *****************/
+.img-mts{
+  height: 3em;
+  // background-image: url(../assets/images/payroll/mts.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/************* end div images ***************/
+
+
+/************* text & background colors ****************/
+.sunred-text{
+  color: var(--sun-red) !important;
+}
+
+.blue-text{
+  color: var(--nha-blue) !important;
+}
+.sunred-bg{
+  background-color: var(--sun-red) !important;
+}
+
+.dark-bg{
+  background-color: var(--dark) !important;
+}
+
+.light-blue-bg{
+  border: solid 2px black !important;
+  background-color: var(--nha-light-blue) !important;
+}
+
+.sun-red-bg{
+  background-color: var(--sun-red) !important;
+}
+.nha-orange-bg{
+  background-color: var(--nha-orange) !important;
+}
+
+.nha-orange-text{
+  color: var(--nha-orange) !important;
+}
+
+.orange-bg{
+  background-color: var(--orange) !important;
+}
+
+.yellow-text{
+  color:yellow !important;
+}
+.dark-light-bg{
+  background-color: var(--dark-light) !important;
+}
+
+.darktone1-bg{
+  background-color: var(--darktone1) !important;
+}
+/****************** side Nav css ********************/
+.side-nav-container {
+  // max-width: 200px;
+  // min-width: 200px;
+  width: 100%;
+  // background: rgba(0, 0, 0, 0.75);
+  background: var(--orange);
+  // margin: 40px auto;
+  padding: 10px 0px 20px 0px;
+  // border: 1px solid #111;
+  border-radius: 0px;
+  // box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+}
+.side-nav-container-white {
+  // max-width: 200px;
+  // min-width: 200px;
+  width: 100%;
+  // background: rgba(0, 0, 0, 0.75);
+  background: var(--nha-light-blue);
+  // margin: 40px auto;
+  padding: 10px 0px 20px 0px;
+  // border: 1px solid #111;
+  border-radius: 0px;
+  // box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+}
+.side-nav-link {
+  font-size: 16px;
+  font-weight: 350;
+  text-align: center;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.side-nav-link:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  bottom: 50%;
+  left: -100%;
+  transition-delay: all 0.5s;
+  transition: all 0.5s;
+}
+.side-nav-link:hover:after,
+.side-nav-link.hover:after {
+  left: 100%;
+}
+.side-nav-link .text {
+  text-shadow: 0px -40px 0px rgba(0, 0, 0, 1);
+  transition: all 0.75s;
+  transform: translateY(100%) translateZ(0);
+  transition-delay: all 0.25s;
+}
+.side-nav-link:hover .text,
+.side-nav-link.hover .text {
+  text-shadow: 0px -40px 0px rgba(255, 255, 255, 1);
+  color: #000;
+  transform: translateY(0%) translateZ(0) scale(1.1);
+  font-weight: 600;
+}
+/*************** End side Nav css *******************/
+
+
+/************** Module Box Div *********************/
+.cardTxtYellow{
+  background-color: var(--nha-light-blue);
+  border-radius: 30px;
+  color: var(--dark);
+  font-size: 1.0em;
+}
+.cardTxtGreen{
+  background-color: green;
+  border-radius: 30px;
+  color: white;
+}
+
+/************** Panel Height *****************/
+
+/***************** Margins and Paddings ****************/
+.zeroMargin{
+  margin-top : -10.25em !important
+}
+
+.pay-register-item-width{
+  width: 120px;
+  // background-color: yellow;
+  // border: 1px solid red;
+}

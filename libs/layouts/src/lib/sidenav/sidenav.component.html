@@ -1,0 +1,60 @@
+<div class="h-100 side-nav-default" mat-elevation-z10>
+    <!-- nav header -->
+    <div class="nav-header d-flex flex-column justify-content-end">
+        <div class="nav-menu-heading ps-3 pb-1">APP Menu</div>
+    </div>
+    <!-- nav header -->
+    <hr />
+    <!-- nav menu -->
+    <!-- <perfect-scrollbar style="max-width: auto; max-height: 85%" [config]="config"> -->
+        <div class="nav-item-container">
+            
+            <!-- /************** New Code **************/ -->
+            <ul
+            *ngFor="let item of menuList"
+            class="nav flex-column flex-nowrap overflow-hidden"
+            >
+                <li class="nav-item" *ngIf="item.children.length == 0">
+                    <a
+                    class="nav-link text-truncate"
+                    href=""
+                    routerLinkActive="active"
+                    routerLink="/{{ item.parentRoute }}/{{ item.routeTitle }}"
+                    (click)="openLink(item.routeTitle)"
+                    ><span class="d-none d-sm-inline">{{ item.menuTitle }}</span></a
+                    >
+                </li>
+                <li class="nav-item" *ngIf="item.children.length != 0">
+                    <a
+                    class="nav-link collapsed text-truncate"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="subMenuConfig"
+                    ><span class="d-none d-sm-inline">{{ item.menuTitle }}</span></a
+                    >
+                    <div class="collapse" id="collapseExample">
+                        <ul
+                            class="nav flex-column dark-bg"
+                            *ngFor="let data of item.children"
+                        >
+                            <li class="nav-item">
+                            <a
+                                class="nav-link text-truncate"
+                                href=""
+                                routerLinkActive="active"
+                                routerLink="/{{ data.parentRoute }}/{{ data.routeTitle }}"
+                                (click)="openLink(data.routeTitle)"
+                                ><span class="d-none d-sm-inline">{{
+                                data.menuTitle
+                                }}</span></a
+                            >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!-- </perfect-scrollbar> -->
+</div>

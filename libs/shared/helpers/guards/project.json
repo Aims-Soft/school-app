@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/helpers/guards",
+  "sourceRoot": "libs/shared/helpers/guards/src",
+  "prefix": "general-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/helpers/guards"],
+      "options": {
+        "jestConfig": "libs/shared/helpers/guards/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/helpers/guards/src/**/*.ts",
+          "libs/shared/helpers/guards/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
